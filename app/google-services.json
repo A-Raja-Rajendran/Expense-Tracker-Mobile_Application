@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "356796711591",
+    "firebase_url": "https://expense-95a4c-default-rtdb.firebaseio.com",
+    "project_id": "expense-95a4c",
+    "storage_bucket": "expense-95a4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356796711591:android:a32b4dc9496e48d425d182",
+        "android_client_info": {
+          "package_name": "com.example.savss.expensetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356796711591-f2c5hc7kt03s5nuupmip8ubdul7ihe76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqpr0YEUngdTB6TWYM4DlLw8brQN5jcLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356796711591-f2c5hc7kt03s5nuupmip8ubdul7ihe76.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

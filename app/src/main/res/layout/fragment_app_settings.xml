@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/black"
+    >
+
+    <ViewSwitcher
+        android:id="@+id/simpleViewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/cat_table"
+                android:layout_width="match_parent"
+                android:textSize="12dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:stretchColumns="0,1"
+                android:focusable="true"> </TableLayout>
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="125dp"
+                android:background="@drawable/but"
+                android:fontFamily="@font/lato_bold"
+                android:hapticFeedbackEnabled="true"
+                android:id="@+id/export"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="export"
+                android:textColor="#80CBC4"
+
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/addCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/but"
+                android:fontFamily="@font/lato_bold"
+                android:hapticFeedbackEnabled="true"
+                android:text="     Add Category     "
+                android:textColor="#80CBC4"
+
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/newCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:foregroundTint="#FFFFFF"
+
+                android:inputType="text"
+                android:textColorHint="#FFFFFF"
+                android:theme="@style/EditTextHint">
+
+                <EditText
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:hint="@string/newCategory"
+                    android:inputType="text"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/newCatBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newCategory"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:inputType="number"
+                android:theme="@style/EditTextHint">
+
+                <EditText
+                    android:id="@+id/budget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:hint="@string/newBudget"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#808080"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/saveCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="top"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="500dp"
+                android:background="@drawable/login_button_background"
+                android:backgroundTint="#1565C0"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:text="     Save Category     " />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="500dp"
+                android:background="@drawable/login_button_background"
+                android:backgroundTint="#1565C0"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:text=" Cancel " />
+
+        </RelativeLayout>
+    </ViewSwitcher>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.example.savss.expensetracker.AddTransactionFragment">
+
+    <LinearLayout
+        android:id="@+id/income_expense_holder"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/income_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#686365"
+            android:fontFamily="@font/lato_bold"
+            android:text="INCOME"
+            android:textColor="@color/BackgroundWhiteColor"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/expense_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#686365"
+            android:fontFamily="@font/lato_bold"
+            android:text="EXPENSE"
+            android:textColor="@color/BackgroundWhiteColor"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/valueAndSignHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/income_expense_holder"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/valueDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/lato"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/BackgroundWhiteColor"
+            android:textColorHint="@color/BackgroundWhiteColor"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/income_or_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/lato"
+            android:text="+"
+            android:textColor="@color/BackgroundWhiteColor"
+            android:textSize="70sp" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueAndSignHolder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categorySpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/signup_button_background"
+        android:fontFamily="@font/lato"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="20sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/descriptionViewInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTextView"
+        android:theme="@style/EditTextHint">
+
+        <EditText
+            android:textStyle="bold"
+            android:id="@+id/descriptionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/lato"
+            android:gravity="start|top"
+            android:hint="Enter a description"
+            android:inputType="textMultiLine"
+            android:textColor="@color/BackgroundWhiteColor"
+            android:textColorHighlight="#808080"
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/clearAndConfirmButtonHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionViewInputLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp"
+        android:imeOptions="actionDone"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/but"
+            android:textColor="#80CBC4"
+            android:fontFamily="@font/lato_bold"
+            android:text="Clear"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/clearButton"
+            android:background="@drawable/but"
+            android:textColor="#80CBC4"
+            android:fontFamily="@font/lato_bold"
+            android:text="Add"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
